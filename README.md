@@ -2,6 +2,8 @@
 
 完整可交互的护肤品牌零售展示站，部署在 Cloudflare Workers + D1。**模拟支付，不收取真实款项、不实际发货。**
 
+在线演示：https://glow.bool.win · 源码仓库：https://github.com/leoyanglab/luma-ritual
+
 ## 功能
 
 - 首页、8 款示例商品、分类、搜索（商品及成分）、价格筛选、排序、收藏。
