@@ -1,21 +1,209 @@
 export const products = [
-{id:'dew-cleanser',name:'Dew Cleanser',zh:'晨露氨基酸洁面',tag:'THE FRESH START',tagZh:'清爽第一步',category:'cleanse',price:24,size:'150 ml',color:'#b4c6a9',shape:'pump',texture:'gel',skin:['dry','oily','combination','sensitive'],ingredients:['Glycerin','Aloe vera','Betaine'],ingredientsZh:['甘油','芦荟','甜菜碱'],desc:'A soft, low-foam cleanse. The beginning of a slower ritual.',descZh:'温和低泡的清洁体验，让日常护理从容开始。',badge:'Everyday essential',badgeZh:'日常必备'},
-{id:'morning-serum',name:'Morning Dew',zh:'晨露保湿精华',tag:'HYDRATING SERUM',tagZh:'水润精华',category:'serum',price:38,size:'30 ml',color:'#dfb094',shape:'dropper',texture:'serum',skin:['dry','combination','sensitive'],ingredients:['Hyaluronic acid','Glycerin','Panthenol'],ingredientsZh:['透明质酸','甘油','泛醇'],desc:'A lightweight, dewy layer for your morning and evening routine.',descZh:'轻盈水润的护理一步，融入早晚日常。',badge:'The signature',badgeZh:'品牌主打'},
-{id:'cloud-cream',name:'Cloud Nine',zh:'云朵保湿面霜',tag:'DAILY MOISTURE',tagZh:'每日滋润',category:'moisturize',price:42,size:'50 ml',color:'#e9ddca',shape:'jar',texture:'cream',skin:['dry','sensitive','combination'],ingredients:['Squalane','Ceramides','Shea butter'],ingredientsZh:['角鲨烷','神经酰胺','乳木果油'],desc:'A comforting cream with a soft, cushioned finish.',descZh:'绵密柔软的乳霜质地，给日常一份舒适。',badge:'A little comfort',badgeZh:'柔润之选'},
-{id:'sun-veil',name:'Sun Veil',zh:'日光轻盈防晒',tag:'DAILY SUN CARE',tagZh:'日间防护',category:'protect',price:32,size:'50 ml',color:'#e1bd71',shape:'tube',texture:'cream',skin:['dry','oily','combination','sensitive'],ingredients:['Zinc oxide','Glycerin','Vitamin E'],ingredientsZh:['氧化锌','甘油','维生素 E'],desc:'A light daily sun-care concept for the final step of your morning ritual.',descZh:'轻盈日间防护概念，作为晨间护理最后一步。',badge:'Morning companion',badgeZh:'晨间搭档'},
-{id:'balance-serum',name:'In Balance',zh:'平衡清透精华',tag:'LIGHTWEIGHT SERUM',tagZh:'清透精华',category:'serum',price:36,size:'30 ml',color:'#9aaf96',shape:'dropper',texture:'serum',skin:['oily','combination'],ingredients:['Niacinamide','Green tea','Zinc PCA'],ingredientsZh:['烟酰胺','绿茶','PCA 锌'],desc:'A fresh, fast-spreading texture for a beautifully simple routine.',descZh:'清新易延展的质地，让护理回归简单。',badge:'Keep it light',badgeZh:'轻盈之选'},
-{id:'night-oil',name:'After Hours',zh:'晚间柔润精华油',tag:'BOTANICAL FACE OIL',tagZh:'植物护理油',category:'serum',price:46,size:'30 ml',color:'#b88454',shape:'dropper',texture:'oil',skin:['dry'],ingredients:['Jojoba oil','Squalane','Vitamin E'],ingredientsZh:['霍霍巴油','角鲨烷','维生素 E'],desc:'A golden, silky finishing touch for a quiet evening.',descZh:'金色丝滑的收尾，让晚间护理慢下来。',badge:'Evening ritual',badgeZh:'晚间仪式'},
-{id:'water-gel',name:'Water Light',zh:'水感清润凝露',tag:'GEL MOISTURIZER',tagZh:'水感保湿',category:'moisturize',price:34,size:'50 ml',color:'#aac3bf',shape:'jar',texture:'gel',skin:['oily','combination'],ingredients:['Aloe vera','Hyaluronic acid','Glycerin'],ingredientsZh:['芦荟','透明质酸','甘油'],desc:'A cool, weightless gel. A fresh take on everyday moisture.',descZh:'清凉轻盈的凝露，带来清爽的每日保湿体验。',badge:'Fresh feeling',badgeZh:'清爽水感'},
-{id:'rose-mist',name:'Soft Reset',zh:'玫瑰水润喷雾',tag:'FACE MIST',tagZh:'随身水润',category:'cleanse',price:22,size:'100 ml',color:'#d5aaa7',shape:'pump',texture:'serum',skin:['dry','combination','sensitive'],ingredients:['Rose water','Glycerin','Panthenol'],ingredientsZh:['玫瑰花水','甘油','泛醇'],desc:'A fine, refreshing mist for a moment of pause.',descZh:'细腻清新的水雾，留给自己片刻休息。',badge:'Take a moment',badgeZh:'片刻放松'}
+  {
+    id: "dew-cleanser",
+    name: "Dew Cleanser",
+    zh: "晨露氨基酸洁面",
+    tag: "THE FRESH START",
+    tagZh: "清爽第一步",
+    category: "cleanse",
+    price: 24,
+    size: "150 ml",
+    color: "#b4c6a9",
+    shape: "pump",
+    texture: "gel",
+    skin: ["dry", "oily", "combination", "sensitive"],
+    ingredients: ["Glycerin", "Aloe vera", "Betaine"],
+    ingredientsZh: ["甘油", "芦荟", "甜菜碱"],
+    desc: "A soft, low-foam cleanse. The beginning of a slower ritual.",
+    descZh: "温和低泡的清洁体验，让日常护理从容开始。",
+    badge: "Everyday essential",
+    badgeZh: "日常必备",
+  },
+  {
+    id: "morning-serum",
+    name: "Morning Dew",
+    zh: "晨露保湿精华",
+    tag: "HYDRATING SERUM",
+    tagZh: "水润精华",
+    category: "serum",
+    price: 38,
+    size: "30 ml",
+    color: "#dfb094",
+    shape: "dropper",
+    texture: "serum",
+    skin: ["dry", "combination", "sensitive"],
+    ingredients: ["Hyaluronic acid", "Glycerin", "Panthenol"],
+    ingredientsZh: ["透明质酸", "甘油", "泛醇"],
+    desc: "A lightweight, dewy layer for your morning and evening routine.",
+    descZh: "轻盈水润的护理一步，融入早晚日常。",
+    badge: "The signature",
+    badgeZh: "品牌主打",
+  },
+  {
+    id: "cloud-cream",
+    name: "Cloud Nine",
+    zh: "云朵保湿面霜",
+    tag: "DAILY MOISTURE",
+    tagZh: "每日滋润",
+    category: "moisturize",
+    price: 42,
+    size: "50 ml",
+    color: "#e9ddca",
+    shape: "jar",
+    texture: "cream",
+    skin: ["dry", "sensitive", "combination"],
+    ingredients: ["Squalane", "Ceramides", "Shea butter"],
+    ingredientsZh: ["角鲨烷", "神经酰胺", "乳木果油"],
+    desc: "A comforting cream with a soft, cushioned finish.",
+    descZh: "绵密柔软的乳霜质地，给日常一份舒适。",
+    badge: "A little comfort",
+    badgeZh: "柔润之选",
+  },
+  {
+    id: "sun-veil",
+    name: "Sun Veil",
+    zh: "日光轻盈防晒",
+    tag: "DAILY SUN CARE",
+    tagZh: "日间防护",
+    category: "protect",
+    price: 32,
+    size: "50 ml",
+    color: "#e1bd71",
+    shape: "tube",
+    texture: "cream",
+    skin: ["dry", "oily", "combination", "sensitive"],
+    ingredients: ["Zinc oxide", "Glycerin", "Vitamin E"],
+    ingredientsZh: ["氧化锌", "甘油", "维生素 E"],
+    desc: "A light daily sun-care concept for the final step of your morning ritual.",
+    descZh: "轻盈日间防护概念，作为晨间护理最后一步。",
+    badge: "Morning companion",
+    badgeZh: "晨间搭档",
+  },
+  {
+    id: "balance-serum",
+    name: "In Balance",
+    zh: "平衡清透精华",
+    tag: "LIGHTWEIGHT SERUM",
+    tagZh: "清透精华",
+    category: "serum",
+    price: 36,
+    size: "30 ml",
+    color: "#9aaf96",
+    shape: "dropper",
+    texture: "serum",
+    skin: ["oily", "combination"],
+    ingredients: ["Niacinamide", "Green tea", "Zinc PCA"],
+    ingredientsZh: ["烟酰胺", "绿茶", "PCA 锌"],
+    desc: "A fresh, fast-spreading texture for a beautifully simple routine.",
+    descZh: "清新易延展的质地，让护理回归简单。",
+    badge: "Keep it light",
+    badgeZh: "轻盈之选",
+  },
+  {
+    id: "night-oil",
+    name: "After Hours",
+    zh: "晚间柔润精华油",
+    tag: "BOTANICAL FACE OIL",
+    tagZh: "植物护理油",
+    category: "serum",
+    price: 46,
+    size: "30 ml",
+    color: "#b88454",
+    shape: "dropper",
+    texture: "oil",
+    skin: ["dry"],
+    ingredients: ["Jojoba oil", "Squalane", "Vitamin E"],
+    ingredientsZh: ["霍霍巴油", "角鲨烷", "维生素 E"],
+    desc: "A golden, silky finishing touch for a quiet evening.",
+    descZh: "金色丝滑的收尾，让晚间护理慢下来。",
+    badge: "Evening ritual",
+    badgeZh: "晚间仪式",
+  },
+  {
+    id: "water-gel",
+    name: "Water Light",
+    zh: "水感清润凝露",
+    tag: "GEL MOISTURIZER",
+    tagZh: "水感保湿",
+    category: "moisturize",
+    price: 34,
+    size: "50 ml",
+    color: "#aac3bf",
+    shape: "jar",
+    texture: "gel",
+    skin: ["oily", "combination"],
+    ingredients: ["Aloe vera", "Hyaluronic acid", "Glycerin"],
+    ingredientsZh: ["芦荟", "透明质酸", "甘油"],
+    desc: "A cool, weightless gel. A fresh take on everyday moisture.",
+    descZh: "清凉轻盈的凝露，带来清爽的每日保湿体验。",
+    badge: "Fresh feeling",
+    badgeZh: "清爽水感",
+  },
+  {
+    id: "rose-mist",
+    name: "Soft Reset",
+    zh: "玫瑰水润喷雾",
+    tag: "FACE MIST",
+    tagZh: "随身水润",
+    category: "cleanse",
+    price: 22,
+    size: "100 ml",
+    color: "#d5aaa7",
+    shape: "pump",
+    texture: "serum",
+    skin: ["dry", "combination", "sensitive"],
+    ingredients: ["Rose water", "Glycerin", "Panthenol"],
+    ingredientsZh: ["玫瑰花水", "甘油", "泛醇"],
+    desc: "A fine, refreshing mist for a moment of pause.",
+    descZh: "细腻清新的水雾，留给自己片刻休息。",
+    badge: "Take a moment",
+    badgeZh: "片刻放松",
+  },
 ];
-export const getProduct = id => products.find(p=>p.id===id);
-export function calculateOrder(items,code='',shipping='standard',gift=false){
- if(!Array.isArray(items)||!items.length||items.length>24) throw new Error('Invalid cart');
- const seen=new Set();
- const lines=items.map(i=>{const p=getProduct(i.id);if(!p||!Number.isInteger(i.qty)||i.qty<1||i.qty>20||seen.has(i.id))throw new Error('Invalid item');seen.add(i.id);return {id:p.id,name:p.name,qty:i.qty,price:p.price};});
- const subtotal=lines.reduce((n,i)=>n+i.price*i.qty,0);
- const discount=code.toUpperCase()==='LUMA10'?Math.round(subtotal*10)/100:0;
- const delivery=shipping==='express'?15:subtotal-discount>=75?0:8;
- const packaging=gift?6:0;
- return {lines,subtotal,discount,delivery,packaging,total:Math.round((subtotal-discount+delivery+packaging)*100)/100,currency:'USD',demo:true};
+export const getProduct = (id) => products.find((p) => p.id === id);
+export function calculateOrder(
+  items,
+  code = "",
+  shipping = "standard",
+  gift = false,
+  catalog = products,
+) {
+  if (
+    typeof code !== "string" ||
+    !["standard", "express"].includes(shipping) ||
+    typeof gift !== "boolean"
+  )
+    throw new Error("Invalid cart");
+  if (!Array.isArray(items) || !items.length || items.length > 24)
+    throw new Error("Invalid cart");
+  const seen = new Set();
+  const lines = items.map((i) => {
+    const p = catalog.find((p) => p.id === i.id);
+    if (
+      !p ||
+      !Number.isInteger(i.qty) ||
+      i.qty < 1 ||
+      i.qty > 20 ||
+      seen.has(i.id)
+    )
+      throw new Error("Invalid item");
+    seen.add(i.id);
+    return { id: p.id, name: p.name, qty: i.qty, price: p.price };
+  });
+  const subtotal = lines.reduce((n, i) => n + i.price * i.qty, 0);
+  const discount =
+    code.toUpperCase() === "LUMA10" ? Math.round(subtotal * 10) / 100 : 0;
+  const delivery =
+    shipping === "express" ? 15 : subtotal - discount >= 75 ? 0 : 8;
+  const packaging = gift ? 6 : 0;
+  return {
+    lines,
+    subtotal,
+    discount,
+    delivery,
+    packaging,
+    total: Math.round((subtotal - discount + delivery + packaging) * 100) / 100,
+    currency: "USD",
+    demo: true,
+  };
 }

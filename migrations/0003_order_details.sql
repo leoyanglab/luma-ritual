@@ -1,0 +1,1 @@
+ALTER TABLE orders ADD COLUMN details TEXT NOT NULL DEFAULT '{}';

@@ -1,6 +1,8 @@
 node_modules/
 .wrangler/
-.dev.vars
+.dev.vars*
 .env*
 *.log
 test-results/
+public/app.js
+public/app.js.LEGAL.txt
