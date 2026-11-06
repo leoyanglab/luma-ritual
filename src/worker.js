@@ -16,7 +16,8 @@ export default {
     // Preserve the consent-controlled HTML instead of injecting an extra edge beacon.
     if (headers.get("Content-Type")?.includes("text/html")) {
       const cache = headers.get("Cache-Control") || "private, no-store";
-      if (!cache.includes("no-transform")) headers.set("Cache-Control", cache + ", no-transform");
+      if (!cache.includes("no-transform"))
+        headers.set("Cache-Control", cache + ", no-transform");
     }
     headers.set("X-Content-Type-Options", "nosniff");
     headers.set("Referrer-Policy", "strict-origin-when-cross-origin");

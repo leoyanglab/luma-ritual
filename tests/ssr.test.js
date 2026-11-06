@@ -102,13 +102,26 @@ test("product fields are escaped in SSR and unsafe identifiers are rejected", ()
   );
 });
 
-
-test('HTML prevents automatic edge transformations while retaining the strict CSP', async () => {
-  const {default: worker} = await import('../src/worker.js');
-  const response = await worker.fetch(new Request('https://glow.bool.win/check.html'), {
-    ASSETS: {fetch: async () => new Response('<html>test</html>', {headers: {'Content-Type': 'text/html', 'Cache-Control': 'private, no-store'}})}
-  });
-  assert.match(response.headers.get('cache-control'), /no-store/);
-  assert.match(response.headers.get('cache-control'), /no-transform/);
-  assert.match(response.headers.get('content-security-policy'), /script-src 'self'/);
+test("HTML prevents automatic edge transformations while retaining the strict CSP", async () => {
+  const { default: worker } = await import("../src/worker.js");
+  const response = await worker.fetch(
+    new Request("https://glow.bool.win/check.html"),
+    {
+      ASSETS: {
+        fetch: async () =>
+          new Response("<html>test</html>", {
+            headers: {
+              "Content-Type": "text/html",
+              "Cache-Control": "private, no-store",
+            },
+          }),
+      },
+    },
+  );
+  assert.match(response.headers.get("cache-control"), /no-store/);
+  assert.match(response.headers.get("cache-control"), /no-transform/);
+  assert.match(
+    response.headers.get("content-security-policy"),
+    /script-src 'self'/,
+  );
 });
